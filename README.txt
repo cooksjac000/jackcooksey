@@ -1,4 +1,4 @@
-This is my robotics portfolio. If you have any questions, would like to work with me on a project, or hire me for a position, please reach out to me at jackcooksey2005@gmail.com.
+This is my robotics portfolio. If you have any questions, would like to work with me on a project, or interview me for a position, please reach out to me at jackcooksey2005@gmail.com.
 
 Credits:
 
@@ -12,3 +12,4 @@ Credits:
 		jQuery (jquery.com)
 
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
