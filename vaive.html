@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ONA - Vaive Logistics - Jack Cooksey</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Jack Cooksey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About</a></li>
+							<li class="active"><a href="index.html#main">Projects</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/jack-cooksey/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/internetsandwich33/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/cooksjac000" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post" style="font-size: 0.9em;">
+								<header class="major" style="font-size: 0.9em;">
+									<span class="date">June-July 2025</span>
+									<h1 style="font-size: 2em;">ONA<br />
+									International Barcelona Internship</h1>
+									<p>Over the Summer of 2025, I was a software development intern at Vaive Logistics, a robotics startup in Barcelona, Spain. Vaive's goal is to develop an autonomous delivery vehicle, ONA, that will replace human drivers in last-mile delivery, saving money and reducing carbon emissions. At Vaive, I developed the user control pipeline to enable user to robot control and robot to user feedback.</p>
+								</header>
+
+								<!-- Full Width Container -->
+								<div style="font-size: 0.9em;">
+									<style>
+										#main .post h2 {
+											font-size: 1.5em;
+										}
+									</style>
+
+									<!-- Problem Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/Vaive Logo.jpg" alt="Problem visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Problem</h2>
+											<p>Users need to be able to send commands to the ONA robot and receive feedback from the ONA robot.</p>
+										</div>
+									</div>
+
+									<!-- Timeline Section: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<h2>Timeline</h2>
+											<p>I was also studying in Barcelona, so I was working 16 hours a week for 7 weeks. I was solely responsible for starting and completing this project.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/ONA 1.avif" alt="Timeline visualization" /></span>
+										</div>
+									</div>
+
+									<!-- Design Process Paragraph 1: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/ONA 2.avif" alt="Research visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Design Process</h2>
+											<p>I didn't know much about networking before starting this project, so I did my research and found that an HTTP interface made with FastAPI would be the best solution. This is because the user needed to be able to control the ONA robot from a web interface, and the API needed asynchronous functionality. I learned from my supervisor that the best API structure would be as follows: Web Interface -> Rest API -> Onboard Robot API, because it enables more complex request processing. This structure allowed me to create more than 20 different requests, which had different functions on the ONA robot. Some of these functions included teleop controls, state feedback data, and autonomous navigation targeting. On the robot API, I used rospy to interface with the ROS environment running on ONA to control nodes and request information from topics asynchronously.</p>
+										</div>
+									</div>
+
+									<!-- Major Challenge Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										
+										<div class="col-6">
+											<h2>Major Challenge: Environment Setup</h2>
+											<p>In a project as large as this, the environment is a complex web of hundreds of different ROS and Python libraries. And, since I was working in a startup with just 4 other employees, I had to set up my environment based on old documentation, which led to multiple libraries being out of date and my environment missing some dependencies of the up-to-date codebase. With this unique challenge, I learned about how to resolve library conflicts and how to understand the dependency structure of a project without needing full documentation.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/ONA 3.avif" alt="Environment setup challenge visualization" /></span>
+										</div>
+									</div>
+
+									<!-- Results Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/vaive hero.jpg" alt="Results visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Results</h2>
+											<p>I was able to complete my navigation pipeline, allowing users to control the ONA robot and get feedback over more than 20 ROS nodes with sub-0.5s latency between the web interface and the robot API.</p>
+										</div>
+										
+									</div>
+
+									<!-- Skills Section: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										
+										<div class="col-6">
+											<h2>Skills</h2>
+											<p>Python, ROS, HTTP, FastAPI, Network, Debugging, Spanish</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/vaive/ONA 4.avif" alt="Skills visualization" /></span>
+										</div>
+									</div>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section style="border-left: 0;">
+							<h3>Address</h3>
+							<p>2815 Guadalupe St 202A<br />
+							Austin, TX 78705</p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Phone</h3>
+							<p><a href="tel:+14697401876">(469) 740-1876</a></p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Email</h3>
+							<p><a href="mailto:jackcooksey2005@gmail.com">jackcooksey2005@gmail.com</a></p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/jack-cooksey/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.instagram.com/internetsandwich33/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/cooksjac000" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Jack Cooksey</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

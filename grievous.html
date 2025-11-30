@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>G.R.I.E.V.O.U.S. - Jack Cooksey</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Jack Cooksey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About</a></li>
+							<li class="active"><a href="index.html#main">Projects</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/jack-cooksey/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/internetsandwich33/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/cooksjac000" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post" style="font-size: 0.9em;">
+								<header class="major" style="font-size: 0.9em;">
+									<span class="date">August 2025-Present</span>
+									<h1 style="font-size: 2em;">G.R.I.E.V.O.U.S.<br />
+									Robotics Research Lab</h1>
+									<p>In the Fall 2025 semester, I have been working as a research assistant in the Autonomous Systems Group. There, I'm working with my PI, Alexander Nettekoven, to develop a low-cost household robot. This robot, G.R.I.E.V.O.U.S., is designed to assist with household chores and other menial tasks. So far, I've built and programmed Grievous to work in teleop, and now we're moving on to training an AI model with our data.</p>
+								</header>
+
+								<!-- Full Width Container -->
+								<div style="font-size: 0.9em;">
+									<style>
+										#main .post h2 {
+											font-size: 1.5em;
+										}
+									</style>
+
+									<!-- Problem Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous asg.png" alt="Problem visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Problem</h2>
+											<p>Develop a low-cost robot with humanlike functionality that can operate in modern living spaces and perform household duties. The robot must be able to reach table/kitchen counter height in the Z-axis and reach 0.35m in the X and Y axes. The ultimate goal is to develop a robot that can run autonomously, without human supervision.</p>
+										</div>
+									</div>
+
+									<!-- Design Process Paragraph 1: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<h2>Design Process</h2>
+											<p>At the start of this project, we researched different humanoid and human-like robots to determine which design would best serve our use case. We examined robots such as the HopeJR, MobileAloha, XLeRobot, and SO101, which the XLeRobot utilises. From our research, we determined that the XLeRobot would provide a good baseline for us to improve on. So we used it and later added two SO101 Leader arms to its back, like the MobileAloha, for teleop, and much later, we decided to add two SO101 Follower arms to the bottom to access the ground without needing a Z-axis movement solution.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous mobile aloha.jpg" alt="Design research visualization" /></span>
+										</div>
+									</div>
+
+									<!-- Design Process Paragraph 2: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous pi.JPG" alt="Software setup visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Design Process</h2>
+											<p>With this idea in mind, I assembled some of the SO101 arms and the XLeRobot head mechanism, but my main focus was on the software setup. I worked with a Raspberry Pi 5 for the first time and successfully set up a headless environment that we could remotely SSH into from our machines. I then set up the Lerobot environment with the XLeRobot robot and had to fix a few errors before we got a successful keyboard teleop running. With this baseline, we decided to use as much of the Lerobot architecture as we could, so I made a custom script that mimicked the teleoperate script provided by Lerobot, but separated the observation function to improve control frequency, now getting a constant 60 Hz even with 3 cameras running at 30 fps, and sent the observation over ZMQ to a remote computer.</p>
+										</div>
+									</div>
+
+									<!-- Design Process Paragraph 3: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<h2>Design Process</h2>
+											<p>At this point, we realised that the parts of the robot assembled by a different research assistant were not up to scratch, so I got to work fixing them and making sure Grievous could operate for an extended period of time. I made sure to tighten every screw and use at least 3 screws for parts that wouldn't need to be taken off again. I also used Loctite to attach the grippers, which were especially prone to getting loose.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous claw.JPG" alt="Assembly fixes visualization" /></span>
+										</div>
+									</div>
+
+									<!-- Design Process Paragraph 4: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous hero.JPG" alt="Recording pipeline visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Design Process</h2>
+											<p>With the teleop functional, the next goal was to record the robot's state during teleop so that we could train a VLA model on our own data. We decided to use the provided Lerobot recording script. To do this, we needed to make a robot and a teleoperator to work with the Lerobot script. My PI designed the robot's basic structure, while I made it work and built the teleoperator. The robot contained a host and a client script, the host being run on the Raspberry Pi, and the client on a remote machine. The host runs the arm teleop control while also pulling observations from the cameras and arms to send over ZMQ to the client. The client then takes the observations and processes them so the Lerobot recording script can record the data and send it to the Hugging Face repository for storage. The teleoperator also runs on the remote machine, mimicking a real teleoperator, but its sole purpose is to pull action data from the ZMQ socket and send that to the recording script, so we don't have to edit what is provided by Lerobot.</p>
+										</div>
+									</div>
+
+									<!-- Major Challenge Section: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<h2>Major Challenge: Unreliable Motors</h2>
+											<p>The motors we are using are Fingertech STS3215 high-torque servos. From using them, we've discovered that they are liable to fail under some circumstances. For a while, I was running our teleop at less than 30 Hz, which caused a lot of jittering in the motors. This led to them repeatedly failing, causing our record to crash and taking precious time to replace. To fix this, I was able to increase the teleop frequency to 60 hz, and now the motors run just fine. But this could be a sign that they won't work for long-term use without human supervision, so we are looking into ways to mitigate damage to the motors.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit">
+												<video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+													<source src="images/grievous/grievous motor.MOV" type="video/quicktime">
+												</video>
+											</span>
+										</div>
+									</div>
+
+									<!-- Results Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit">
+												<video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+													<source src="images/grievous/grievous record.MOV" type="video/quicktime">
+												</video>
+											</span>
+										</div>
+										<div class="col-6">
+											<h2>Results</h2>
+											<p>So far, I've successfully created a recording pipeline where a user is able to teleop Grievous from an onboard Raspberry Pi host, with 60 Hz control and observation frequency, sending information to a remote client for processing and storage. I will continue my involvement in the Autonomous Systems Group next year, and continue to produce results.</p>
+										</div>
+									</div>
+
+									<!-- Future Considerations Section: Text Left, Image Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<h2>Future Considerations</h2>
+											<p>The next stage of this project is to train a VLA model and deploy Grievous in a household setting.</p>
+										</div>
+										<div class="col-6">
+											<span class="image fit"><img src="images/grievous/grievous vla.png" alt="Future considerations visualization" /></span>
+										</div>
+									</div>
+
+									<!-- Skills Section: Image Left, Text Right -->
+									<div class="row gtr-50" style="margin-bottom: 3rem;">
+										<div class="col-6">
+											<span class="image fit"><img src="images/pic02.jpg" alt="Skills visualization" /></span>
+										</div>
+										<div class="col-6">
+											<h2>Skills</h2>
+											<p>Python, Troubleshooting, Software Architecture, ZMQ, Controls Engineering, 3D printing, SSH, Raspberry Pi</p>
+										</div>
+									</div>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section style="border-left: 0;">
+							<h3>Address</h3>
+							<p>2815 Guadalupe St 202A<br />
+							Austin, TX 78705</p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Phone</h3>
+							<p><a href="tel:+14697401876">(469) 740-1876</a></p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Email</h3>
+							<p><a href="mailto:jackcooksey2005@gmail.com">jackcooksey2005@gmail.com</a></p>
+						</section>
+						<section style="border-left: 0;">
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/jack-cooksey/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.instagram.com/internetsandwich33/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/cooksjac000" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Jack Cooksey</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
