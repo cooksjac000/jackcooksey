@@ -45,7 +45,7 @@
 									<span class="date">June-July 2025</span>
 									<h1 style="font-size: 2em;">ONA<br />
 									International Barcelona Internship</h1>
-									<p>Over the Summer of 2025, I was a software development intern at Vaive Logistics, a robotics startup in Barcelona, Spain. Vaive's goal is to develop an autonomous delivery vehicle, ONA, that will replace human drivers in last-mile delivery, saving money and reducing carbon emissions. At Vaive, I developed the user control pipeline to enable user to robot control and robot to user feedback.</p>
+									<p>Over the Summer of 2025, I was a software development intern at Vaive Logistics, a robotics startup in Barcelona, Spain. Vaive's goal is to develop an autonomous delivery vehicle, ONA, that will replace human drivers in last-mile delivery, saving money and reducing carbon emissions. At Vaive, I developed the user control pipeline to enable user-to-robot control and robot-to-user feedback.</p>
 								</header>
 
 								<!-- Full Width Container -->
@@ -85,7 +85,7 @@
 										</div>
 										<div class="col-6">
 											<h2>Design Process</h2>
-											<p>I didn't know much about networking before starting this project, so I did my research and found that an HTTP interface made with FastAPI would be the best solution. This is because the user needed to be able to control the ONA robot from a web interface, and the API needed asynchronous functionality. I learned from my supervisor that the best API structure would be as follows: Web Interface -> Rest API -> Onboard Robot API, because it enables more complex request processing. This structure allowed me to create more than 20 different requests, which had different functions on the ONA robot. Some of these functions included teleop controls, state feedback data, and autonomous navigation targeting. On the robot API, I used rospy to interface with the ROS environment running on ONA to control nodes and request information from topics asynchronously.</p>
+											<p>I didn't know much about networking before starting this project, so I did my research and found that an HTTP interface made with FastAPI would be the best solution. This is because the user needed to be able to control the ONA robot from a web interface, and the API needed asynchronous functionality. I learned from my supervisor that the best API structure would be as follows: Web Interface -> REST API -> Onboard Robot API, because it enables more complex request processing. This structure allowed me to create more than 20 different requests, each with different functions on the ONA robot. Some of these functions included teleop controls, state feedback data, and autonomous navigation targeting. On the robot API, I used rospy to interface with the ROS environment running on ONA to control nodes and request information from topics asynchronously.</p>
 										</div>
 									</div>
 
